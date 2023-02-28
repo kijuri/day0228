@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07testfat.html</title>
+    <style>
+        * {
+            font-size: 20pt;
+        }
+    </style>
+
+    <script>
+        function add() {
+            var su1 = form.number1.value;
+            var su2 = form.number2.value;
+            var first = parseInt(su1);
+            var second = parseInt(su2);
+            var myhap = 0, mysub = 0, mygob = 0, mymok = 0;
+            var myhap = first + second;
+            var mysub = first - second;
+            var mygob = first * second;
+            var mymok = first / second;
+            document.getElementById("result").value = myhap;
+            if (su1 == '' || su2 == '') {
+                alert('공백입니다.');
+                return;
+            }
+        }//end
+        function sub() {
+            var su1 = form.number1.value;
+            var su2 = form.number2.value;
+            var first = parseInt(su1);
+            var second = parseInt(su2);
+            var myhap = 0, mysub = 0, mygob = 0, mymok = 0;
+            myhap = first + second;
+            mysub = first - second;
+            mygob = first * second;
+            mymok = first / second;
+            document.getElementById("result").value = mysub;
+            if (su1 == '' || su2 == '') {
+                alert('공백입니다.');
+                return;
+            }
+        }//end
+        function mul() {
+            var su1 = form.number1.value;
+            var su2 = form.number2.value;
+            var first = parseInt(su1);
+            var second = parseInt(su2);
+            var myhap = 0, mysub = 0, mygob = 0, mymok = 0;
+            myhap = first + second;
+            mysub = first - second;
+            mygob = first * second;
+            mymok = first / second;
+            document.getElementById("result").value = mygob;
+            if (su1 == '' || su2 == '') {
+                alert('공백입니다.');
+                return;
+            }
+        }//end
+        function mok() {
+            var su1 = form.number1.value;
+            var su2 = form.number2.value;
+            var first = parseInt(su1);
+            var second = parseInt(su2);
+            var myhap = 0, mysub = 0, mygob = 0, mymok = 0;
+            myhap = first + second;
+            mysub = first - second;
+            mygob = first * second;
+            mymok = first / second;
+            document.getElementById("result").value = mymok;
+            if (su1 == '' || su2 == '') {
+                alert('공백입니다.');
+                return;
+            }
+        }//end
+
+    </script>
+</head>
+
+<body>
+    <h2>13testcal.html</h2>
+    <form name="form">
+        숫자1: <input type="number" name="number1" value="" style="text-align: right;">
+        <p></p>
+        숫자2: <input type="number" name="number2" value="" style="text-align: right;">
+        <p></p>
+
+        <input type="button" value="더하기" name="btnadd" id="btnadd" onclick="add()">
+        <input type="button" value="  빼기  " name="btnsub" id="btnsub" onclick="sub()">
+        <input type="button" value="곱하기" name="btnmul" id="btnmul" onclick="mul()">
+        <input type="button" value="    몫    " name="btnmok" id="btnmok" onclick="mok()">
+        <p></p>
+        결과 : <input type="text" id="result" name="result" readonly="readonly" style="text-align: right;">
+
+    </form>
+</body>
+
+</html>

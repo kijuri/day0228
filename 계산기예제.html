@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07testfat.html</title>
+    <style>
+        * {
+            font-size: 12pt;
+        }
+    </style>
+
+    <script>
+        function calculateBMI() {
+            var height = form.number1.value;
+            var weight = form.number2.value;
+            var height = height / 100;
+            var BMI = weight / (height * height);
+
+            document.getElementById("result").value = BMI;
+        }//end
+
+    </script>
+</head>
+
+<body>
+    <h2>07testfat.html</h2>
+    <form name="form">
+        현재키입력 : <input type="number" name="number1" value="">
+        <p></p>
+        몸무게입력 : <input type="number" name="number2" value="">
+        <p></p>
+
+        <input type="text" id="result" name="result" readonly="readonly">
+        <input type="button" value=" BMI 보기 " onclick="calculateBMI()">
+
+    </form>
+</body>
+
+</html>
